@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8"> 
+
+	<title>Formulario 1.2</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+ 			$("#agregar").click(function()
+ 			{
+ 				if ($("#Productos").val() != "")
+					$("#CajaItems").val($("#Productos").val() + "\n" + $("#CajaItems").val());
+			});
+		});
+	</script>
+</head>
+<body>
+	<form name="Origen">
+		<h3><b>Seleccione un producto:</b></h3>
+		<select id="Productos" size=1>
+			<option value="">Productos</option>
+			<option value="">------------</option>
+			<option value="Patatas">Patatas</option>
+			<option value="Judías">Judías</option>
+			<option value="Acelgas">Acelgas</option>
+			<option value="Tomates">Tomates</option>
+			<option value="Melocotones">Melocotones</option>
+			<option value="Manzanas">Manzanas</option>
+		</select>
+		<input type="button" id="agregar" value="Añadir">
+	</form>
+	<form name="Destino">
+		<h3><b>Elementos añadidos:</b></h3>
+		<textarea cols="20" rows="4" id="CajaItems" ></textarea>
+	</form>
+</body>
+</html>

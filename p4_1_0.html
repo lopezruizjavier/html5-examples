@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8"> 
+
+	<title>Formulario 1.0</title>
+	<script>
+		function Unir()
+		{
+			var casilla1 = document.forms[0].casilla1.value;
+			var casilla2 = document.palabras.elements[1].value;
+			var union = (casilla1 + " y " + casilla2);
+			document.forms[0].elements[3].value = union;
+			document.palabras.boton.value = "Pulsado";
+		}
+	</script>
+</head>
+
+<body>
+	<form name="palabras">
+		<input type="text" name="casilla1" size="18">
+		<input type="text" name="casilla2" size="18">
+		<br>
+		<input type="button" name="boton" value="Pulsar" onclick="Unir()">
+		<br>
+		<input type="text" name="resultado" size="18">
+	</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8"> 
+
+	<title>Formulario 1.3</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script>
+		function validateEmail(email)
+		{
+			var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+			return reg.test(email);
+		}; 
+
+		$(document).ready(function()
+		{
+			$('#validar').click(function()
+			{ 
+				var email = $('#email').val();
+
+				if ($.trim(email).length == 0)
+				{
+					$('#res').attr("title", "Escriba un correo electrónico para validarlo.");
+					$('#res').attr("src", "images/unknown.png");
+				}
+				else
+				{
+					$('#res').attr("title", "");
+					$('#res').attr("src", "images/" + validateEmail(email) + ".png");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" id="email" placeholder="Correo electrónico" size="40">
+		<input type="button" id="validar" value="Validar"> <img src="images/unknown.png" alt="res" id="res" title="Escriba un correo electrónico para validarlo." style="width: 24px; height: 24px;"/>
+	</form>
+</body>
+</html>

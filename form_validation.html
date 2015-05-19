@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="utf-8"> 
+    <title>Compra de entradas</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon2.jpg"/>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="main" id="main2">
+    <div class="container" id="container2">    
+    	<form class="pure-form pure-form-stacked">
+            <fieldset>
+                <legend>Comprar entradas para <br/> Star Wars V: El imperio contrataca</legend>
+
+                <label for="name">Nombre</label>
+                <input type="text" autocomplete="given-name" id="name" placeholder="Ejemplo: Juan " required>
+
+                <label for="surname">Apellidos</label>
+                <input type="text" autocomplete="given-name" id="surname" placeholder="Ejemplo: García Martínez" required> 
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" placeholder="Ejemplo: juan.garciamart@uah.es" required> 
+
+                <label for="bday">Fecha de nacimiento:</label>
+                <input type="date" name="bday">
+
+                <label for="credi">Tarjeta de crédito</label> 
+                <input type="password" id="credit" required placeholder="Ejemplo: 4111-1111-1111-1111"> 
+
+                <label for="phone">Número de teléfono</label> 
+                <input type="text" id="phone" autocomplete="tel" placeholder="Ejemplo: 917371747" required>
+
+                <label for="cantidad">Cantidad</label> 
+                <input type="number" id="cantidad" placeholder="Ejemplo: 2" required>  
+
+                <label for="cb" class="pure-checkbox">
+                    <input id="cb" type="checkbox" checked disabled> Sin numerar
+                </label>             
+              
+                <label for="cb" class="pure-checkbox">
+                    <input id="cb" type="checkbox" required> He leído los términos y condiciones
+                </label>
+
+                <button type="submit" id="submit" class="pure-button pure-button-primary">Comprar</button>
+            </fieldset> 
+        </form> 
+    </div>      
+</div>
+</body>
+</html>

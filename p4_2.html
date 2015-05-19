@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8"> 
+
+	<title>Gestión de los pedidos de las mesas</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg"/>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="js/restaurante.js"></script>
+</head>
+<body>
+	<div id="main">
+		<div id="container">
+			<form class="pure-form">
+				<fieldset>
+					<legend>Gestión de los pedidos de las mesas.</legend>
+
+					<div id="menu">
+						<label for="first" class="pure-radio">
+	       					<input type="radio" name="plato" id="first" checked />
+	        				Primeros platos
+	    				</label>
+	    				<label for="second" class="pure-radio">
+	       					<input type="radio" name="plato" id="second" />
+	       					Segundos platos
+	       				</label>
+	    				<label for="desserts" class="pure-radio">
+	       					<input type="radio" name="plato" id="desserts" />
+	       					Postres
+	    				</label>
+					</div>
+
+					<div id="tables">
+						<select id="table"></select>
+					</div>
+
+					<div class="clear"></div>
+
+					<div id="articles">
+						<select size="10" id="meals"></select>
+						<select size="10" id="order"></select>
+					</div>
+
+					<div id="others">
+						<div id="extras">
+							<label for="coffee" class="pure-checkbox">
+	        					<input type="checkbox" id="coffee" />
+	        					con café
+							</label>
+							<label for="cup" class="pure-checkbox">
+	        					<input type="checkbox" id="cup" />
+	        					con copa
+							</label>
+						</div>
+						<div id="bill">
+							<span id="total_euros">
+								Total: <input type="text" value="0.00" id="total" readonly/> €
+								 <input type="button" class="pure-button pure-button-primary" id="pay" value="Pagado" />
+							</span>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

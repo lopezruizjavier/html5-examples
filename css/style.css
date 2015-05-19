@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+}
+
+#main {
+    background: url(../images/bg.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%; 
+}
+
+#container {
+    background-color: white;
+    padding: 15px;
+    width: 800px;
+    height: 435px;
+    border-radius: 12px;
+    padding: 5px;
+    border: solid 1px #EFEFEF;
+    box-shadow: 1px 1px 5px #999;
+}
+
+#menu {
+    float: left;
+    margin-left: 30px;
+}
+
+#table {
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+    width: 100px;
+}
+
+#total_euros {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 0.8em;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+}
+
+#total {
+    text-align: right;
+}
+
+#articles > select {
+    width: 360px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+#meals {
+    float: left;
+    margin-left: 30px;
+}
+
+#order {
+    float: right;
+    margin-right: 20px;
+}
+
+#others {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#bill {
+    margin-top: 20px;
+}
+
+#extras > label {
+    margin-left: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+#credits {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#656565;
+    font-size:12px;
+    margin:0px 0px 0px 1px;
+    padding:5px 0px 0px 0px;
+}

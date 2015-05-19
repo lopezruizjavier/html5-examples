@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8"> 
+	
+	<title>Formulario 1.1</title>
+	<script>
+		function copiar(textoa, textob)
+		{
+			textob.value = textoa.value;
+		}
+	</script>
+	<style>
+		.rojo {
+			color:red;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="text" id="texto1" size="18">
+	<form id="formulario">
+		<input type="text" id="texto1" size="18" class="rojo">
+		<br />
+		<input type="text" id="texto2" size="18">
+		<br />
+		<input type="text" id="texto3" size="18">
+	</form>
+
+	<form id="formulario2">
+		<input class="rojo" type="button" id="boton1" value="Pasar de 1 a 2" onclick="copiar(texto1, texto2)">
+		<input type="button" id="boton2" value="Pasar de 2 a 3" onclick="copiar(texto2, texto3)">
+	</form>
+</body>
+</html>
